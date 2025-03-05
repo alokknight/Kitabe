@@ -211,7 +211,7 @@
         function openModal(obj) {
             $('#booksummary').text("");
             $('#loading').show();
-            var bookid = obj.getAttribute('data-bookid');
+            var bookid = obj.getAttribute('data-book-id');
             var summary = getsummary(bookid);
             var bookName = obj.innerHTML;
             var authors = obj.getAttribute('data-authors');
@@ -242,12 +242,14 @@
                 books.forEach(function(book, index, array) {
                     var booktoadd = document.createElement('a');
                     booktoadd.innerHTML = book['original_title'];
-                    booktoadd.setAttribute('data-bookid', book['book_id']);
+                    booktoadd.setAttribute('data-book-id', book['book_id']);
                     booktoadd.setAttribute('data-authors', book['authors']);
                     booktoadd.setAttribute('data-imageurl', book['image_url']);
                     booktoadd.setAttribute('data-averagerating', book['average_rating']);
-                    booktoadd.setAttribute('href', 'javascript:;');
-                    booktoadd.setAttribute('onclick', 'openModal(this)');
+                    booktoadd.setAttribute('href', 'javascript:void(0);'); // Prevent default link behavior
+                    booktoadd.addEventListener('click', function() { // Use addEventListener
+                        openModal(this);
+                    });
                     searchdiv.appendChild(booktoadd);
                 });
             }
@@ -281,7 +283,9 @@
         $("#bookName").focus(function() {
                 $('#search-dropdown').show();
             }).blur(function() {
+                setTimeout(function() { // Delayed hide
                 $('#search-dropdown').hide(150);
+            }, 150);
             })
             //for rating a book
         $(function() {

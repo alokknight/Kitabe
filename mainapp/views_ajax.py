@@ -36,6 +36,7 @@ def search(request):
             df_book["original_title"].str.contains(query, regex=False, case=False)
         ][:5]
         top5_result = json.dumps(top5_result.to_dict("records"))
+        print(top5_result)
 
         return JsonResponse({"success": True, "top5_result": top5_result}, status=200)
 

@@ -142,6 +142,9 @@ body {
 #searchdropdown .dropdown-content {
     display: block;
     position: absolute;
+    top: 100%; /* Position the dropdown below the search input */
+    left: 0;   /* Align the left edge with the search input */
+    margin-top: 2px; /* Add a small gap */
     background-color: #f1f1f1;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
