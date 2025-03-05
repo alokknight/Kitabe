@@ -31,7 +31,7 @@ DEBUG = str(os.environ.get("DEBUG", True)) == "True"
 PROD_ENV = str(os.environ.get("PROD_ENV", False)) == "True"
 
 ALLOWED_HOSTS = [
-    "https://kitabe-2t8l.onrender.com",
+    "kitabe-2t8l.onrender.com",
     "127.0.0.1",
     "localhost",
 ]
