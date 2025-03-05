@@ -49,22 +49,32 @@ def book_summary(request):
         bookid = request.POST.get("bookid", None)
         if is_bookid_invalid(bookid):
             return JsonResponse({"success": False}, status=200)
-        URL = "https://www.goodreads.com/book/show/" + bookid
-        page = requests.get(URL)
-        soup = BeautifulSoup(page.content, "html.parser")
-        div_container = soup.find(id="description")
-        full_book_summary = ""
-        if not div_container:
+        
+        try:
+            URL = "https://www.goodreads.com/book/show/" + bookid
+            page = requests.get(URL)
+            soup = BeautifulSoup(page.content, "html.parser")
+            
+            # Look for description in different possible elements
+            description = soup.find(class_="TruncatedContent__text")
+            if not description:
+                description = soup.find(class_="DetailsLayoutRightParagraph__widthConstrained")
+            if not description:
+                description = soup.find(id="description")
+                
+            if not description:
+                return JsonResponse({"success": False}, status=200)
+                
+            summary = description.get_text().strip()
+            # Limit to reasonable length while keeping complete sentences
+            if len(summary) > 500:
+                summary = ". ".join(summary.split(". ")[:3]) + "..."
+                
+            return JsonResponse({"success": True, "booksummary": summary}, status=200)
+            
+        except Exception as e:
+            print(f"Error fetching summary: {str(e)}")
             return JsonResponse({"success": False}, status=200)
-        for spantag in div_container.find_all("span"):
-            try:
-                # When text is too long, consider till last complete sentence
-                full_book_summary += spantag.text[: spantag.text.rindex(".")] + ". "
-            except ValueError:
-                full_book_summary += spantag.text + " "
-            break
-        part_summary = " ".join(full_book_summary.split()[:65]) + " . . ."
-        return JsonResponse({"success": True, "booksummary": part_summary}, status=200)
 
 
 def get_book_details(request):
