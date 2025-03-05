@@ -31,15 +31,13 @@ DEBUG = str(os.environ.get("DEBUG", True)) == "True"
 PROD_ENV = str(os.environ.get("PROD_ENV", False)) == "True"
 
 ALLOWED_HOSTS = [
-    "kitabe-app.herokuapp.com",
-    "kitabe.up.railway.app",
+    "https://kitabe-2t8l.onrender.com",
     "127.0.0.1",
     "localhost",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://kitabe-app.herokuapp.com",
-    "https://kitabe.up.railway.app",
+    "https://kitabe-2t8l.onrender.com",
 ]
 
 
