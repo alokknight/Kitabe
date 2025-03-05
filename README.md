@@ -6,14 +6,14 @@ Simply Rate ⭐ some books and get immediate recommendations tailored for you �
 See [Demo](#user-content-demo-) 🎥
 
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://kitabe.up.railway.app/)
-[![Build Status](https://travis-ci.com/alokknight/Kitabe.svg?token=XKcoN48yFyATXWUZ6d8j&branch=master)](https://travis-ci.com/alokknight/Kitabe)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/alokknight/Kitabe/blob/master/CONTRIBUTING.md)
+[![Build Status](https://travis-ci.com/Praful932/Kitabe.svg?token=XKcoN48yFyATXWUZ6d8j&branch=master)](https://travis-ci.com/Praful932/Kitabe)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Praful932/Kitabe/blob/master/CONTRIBUTING.md)
 [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) <br>
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Falokknight%2FKitabe&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/alokknight/Kitabe/graphs/commit-activity)
-![GitHub stars](https://img.shields.io/github/stars/alokknight/Kitabe?style=social) ![GitHub forks](https://img.shields.io/github/forks/alokknight/Kitabe?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/alokknight/Kitabe?style=social)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPraful932%2FKitabe&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Praful932/Kitabe/graphs/commit-activity)
+![GitHub stars](https://img.shields.io/github/stars/Praful932/Kitabe?style=social) ![GitHub forks](https://img.shields.io/github/forks/Praful932/Kitabe?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/Praful932/Kitabe?style=social)
 
-For Contributing 💜 and setting Up head [here](https://github.com/alokknight/Kitabe/blob/master/CONTRIBUTING.md).
+For Contributing 💜 and setting Up head [here](https://github.com/Praful932/Kitabe/blob/master/CONTRIBUTING.md).
 
 # Contents
 - [Demo](#user-content-demo-) 🎥
@@ -25,7 +25,7 @@ For Contributing 💜 and setting Up head [here](https://github.com/alokknight/K
     - [Final Result](#final-result-) 😁
 - [Project Structure](#project-structure-%EF%B8%8F) 💁‍♀️
 - [To Do](#to-do-) 🎯
-- [Contribute](https://github.com/alokknight/Kitabe/blob/master/CONTRIBUTING.md) 🧏‍♂️
+- [Contribute](https://github.com/Praful932/Kitabe/blob/master/CONTRIBUTING.md) 🧏‍♂️
 - [Notebooks and Files](#notebooks-and-files-) 📓
 - [References](#references-) 😇
 - [Contributors](#contributors-) 🤗

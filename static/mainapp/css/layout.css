@@ -82,6 +82,41 @@ body {
 
 .searchbar {
     font-family: "Kumbh Sans", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+}
+
+.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.searchbar button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.searchbar button:hover {
+    background: #0b7dda;
+}
+
+.searchbar::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #bookrating {
@@ -305,3 +340,43 @@ body {
         background-color: #ff6666;
     }
 }
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .searchbar {
+        width: 100%; /* Take full width on smaller screens */
+        margin-bottom: 10px; /* Add some spacing below */
+    }
+
+    .searchbar input[type=text] {
+        width: 70%; /* Adjust input width */
+    }
+
+    .searchbar button {
+        width: 30%; /* Adjust button width */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .searchbar input[type=text] {
+        font-size: 14px; /* Smaller font size on very small screens */
+    }
+
+    .searchbar button {
+        font-size: 14px;
+    }
+}
+
+/* Table Responsiveness */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+
+/* Example usage: */
+/* <div class="table-responsive">
+       <table>
+           ... table content ...
+       </table>
+   </div> 
+*/

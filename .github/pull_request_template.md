@@ -13,7 +13,7 @@
 ## GIF After
 
 ## Checklist
-- [ ] I have followed the [Contribution Guidelines](https://github.com/alokknight/Kitabe/blob/master/CONTRIBUTING.md).
+- [ ] I have followed the [Contribution Guidelines](https://github.com/Praful932/Kitabe/blob/master/CONTRIBUTING.md).
 - [ ] My changes do not edit/add any unrequired files.
 - [ ] My changes are covered by tests.
 
